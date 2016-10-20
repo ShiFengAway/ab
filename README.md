@@ -1,5 +1,5 @@
 # ApacheBench-standalone
-ApacheBench standalone - a Apache HTTP Server benchmark tool, known as **ab** in [apache/httpd](https://github.com/apache/httpd)
+ApacheBench standalone - an Apache HTTP Server benchmark tool, known as **ab** in [apache/httpd](https://github.com/apache/httpd)
 
 ---
 ## Requirement
