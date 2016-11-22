@@ -1,5 +1,5 @@
 # ApacheBench-standalone
-ApacheBench standalone - an Apache HTTP Server benchmark tool, known as **ab** in [apache/httpd](https://github.com/apache/httpd)
+ApacheBench standalone - an Apache HTTP Server benchmark tool, known as <b>ab</b> in [apache/httpd](https://github.com/apache/httpd)
 
 ---
 ## Requirement
@@ -31,7 +31,7 @@ Current upstream [apache/httpd](https://github.com/apache/httpd) version is [htt
 
 ## About Version
 ApacheBench seems to have its own version. However it doesn't changes very often.
-So we decide to tag this project using the version of httpd that sourced from.
+So we decide to tag this project with the version of httpd that sourced from.
 ```bash
 ab -V   # This is ApacheBench, Version 2.3 <$Revision$>
 ```
@@ -45,9 +45,9 @@ The following lines are commented in ab.c, so Windows is not supported.
 ```
 
 ## About APR - Apache Portable Runtime
-Install newer version of [apr](https://github.com/apache/apr) / [apr-util](https://github.com/apache/apr-util)
+Since [apache/httpd](https://github.com/apache/httpd) is developed based on [apr](https://github.com/apache/apr) / [apr-util](https://github.com/apache/apr-util), ApacheBench should be built with apr-devel and apr-util-devel of official yum packages repository.
+You can also build with newer version of apr yourself. (More details in README file of [apr](https://github.com/apache/apr)).
 ```bash
-# README from apr
 # Building APR RPM files on Linux
 rpmbuild -tb apr-<version>.tar.bz2          # latest version - 1.5.2
 rpmbuild -tb apr-util-<version>.tar.bz2     # latest version - 1.5.4
