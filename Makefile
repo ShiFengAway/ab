@@ -6,7 +6,7 @@ all: ab
 .PHONY: ab clean install uninstall
 
 ab:
-	${CC} -std=gnu99 -D_GNU_SOURCE -DHAVE_OPENSSL -lm -ldl -lssl -pthread -lcrypto -lcrypt -I/usr/include/apr-1 /usr/lib64/libaprutil-1.so /usr/lib64/libapr-1.so -o ab ab.c
+	${CC} -std=gnu99 -D_GNU_SOURCE -DHAVE_OPENSSL -lm -lssl -pthread -lcrypto -I/usr/include/apr-1 /usr/lib64/libaprutil-1.so /usr/lib64/libapr-1.so -o ab ab.c
 
 install:
 	install -m 0755 ab ${prefix}/bin
