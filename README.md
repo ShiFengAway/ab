@@ -3,6 +3,7 @@ ApacheBench standalone - an Apache HTTP Server benchmark tool, known as <b>ab</b
 
 ---
 ## Requirement
+There'll be a confliction when httpd-tools is already installed, because **ab** is part of httpd-tools.
 * gcc / clang
 * openssl-devel
 * apr-util-devel (apr-devel included)
