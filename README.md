@@ -21,10 +21,11 @@ rpmbuild -tb ab-<version>.tar.gz
 ## Basic Usage
 ```bash
 ab -c10 -n100 https://g.cn/
+ab -h
 ```
 
 ## Source
-Upstream [apache/httpd](https://github.com/apache/httpd) version is from latest tag of [httpd](https://github.com/apache/httpd)
+Upstream version is from latest tag of [apache/httpd](https://github.com/apache/httpd)
 * ap_release.h  - httpd/include/ap_release.h
 * ab.c          - httpd/support/ab.c
 * docs/man/ab.1 - httpd/docs/man/ab.1
