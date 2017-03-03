@@ -14,7 +14,7 @@ function build(){
 }
 
 function test(){
-    src/ab -c2 -n10 https://g.cn/
+    src/ab -c2 -n100 https://g.cn/
 }
 
 case "${1}" in

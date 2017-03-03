@@ -19,13 +19,12 @@ ApacheBench standalone - a Apache HTTP Server benchmark tool, known as ab.
 %setup -q
 
 %build
+autoreconf -fiv
+%configure
 make %{?_smp_mflags}
 
 %install
-rm -rf ${RPM_BUILD_ROOT}
-mkdir -p ${RPM_BUILD_ROOT}%{_bindir}
-mkdir -p ${RPM_BUILD_ROOT}%{_mandir}/man1
-%make_install prefix=${RPM_BUILD_ROOT}/usr
+%make_install prefix=/usr
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
