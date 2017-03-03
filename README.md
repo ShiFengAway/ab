@@ -9,9 +9,15 @@ There'll be a confliction when httpd-tools is already installed, because **ab** 
 * apr-util-devel (apr-devel included)
 
 ## Installation
-#### Make and install
+#### Makefile
 ```bash
-make
+cp rpm/Makefile.simple Makefile
+make && make install
+```
+#### Autoconf
+```bash
+sh auto.sh build
+sh auto.sh test
 make install
 ```
 #### Build RPM file on Linux
